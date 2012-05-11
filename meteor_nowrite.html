@@ -1,0 +1,15 @@
+<head>
+  <title>Meteor NoWrite</title>
+</head>
+
+<body>
+  <h1>A simple app demonstrating data sharing without writing to the db</h1>
+  
+  {{> current_value}}
+</body>
+
+<template name="current_value">
+  <p>Current value is : <em>{{value}}</em></p>
+  <input type="text" name="value" value="{{value}}"></input>
+  <input type="button" value="Publish" />
+</template>
